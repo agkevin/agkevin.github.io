@@ -2,12 +2,16 @@ body {
     text-align:center;
     padding-top: 2vh;
 }
-h1 {
-    
-}
-img {
-	margin: auto;
+img{
+	align-self: auto;
+	margin: 0;
 }
 #header1{
 	padding-top: 10vh;
+}
+#pbottom{
+	bottom: 5px;
+	font-size: 85%; 
+	position: relative;
+	bottom: 5px;
 }
