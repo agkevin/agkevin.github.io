@@ -11,23 +11,24 @@
 		}
 	</style>
 </head>
-<body style="text-align: left; margin: 3vh">
+<body style="text-align: left; margin-left: 10vh; margin-right: 10vh">
 <br>
 <h1 id="header1"">Prototype CAN net</h1>
 <h3>Fall 2016</h3>
 <p>This is a test plataform for labwork to explore the automotive bus 'CAN', developed for my home univeristy UPAEP in Mexico, using real automotive components.</p>
 <p>My team and I participated & presented the project in a regional exposition event called 'Expo Ciencias' in Puebla, Mexico.</p>
-<p>Bus systems play a HUGE role now a days in automotive communications, due to exponential grow of technology and the motivation to increase safety in today's automobile. Also we are present in another automotive revolution which has spark technological growth, "Electric Mobility" & "Semi/Autonomous Vehicles".  </p>
+<p>Bus systems play a HUGE role now a days in automotive communications, due to exponential grow of technology and the motivation to increase safety in today's automobile.</p>
 <br>
-<p>A bus system is a way/medium to transport data between computer components, microcontrollers or a component that processes information. In our case this components are so called "Nodes".</p>
+<p>A bus system is a way/medium to transport data between computer components, microcontrollers or a component that processes information. In our case this components are the so called "Nodes".</p>
 <p>Each node shares the physical medium of 2 wires according to the <a href="https://www.iso.org/standard/63648.html">CAN standard</a>. This enables them to exchange information, both to listen and transmit data onto the bus.</p>
 <p>The interaction structure of the nodes is based on a Master-Slave, where 1 node acts as a gateway to control the other nodes which in consecuence interacts with the automotive components, this network is based on a ring topoloy.</p>
-<p> Our Bus Node architecture works with a 3 layer simplified model (based on OSI model). Made of an <a href="https://www.arduino.cc/en/main/arduinoBoardUno">Arduino UNO</a> board, a communication controller & transceiver. This last 2 come embedded in a <a href="http://wiki.seeed.cc/CAN-BUS_Shield_V1.2/">CAN Bus shield</a>. In this shield it was requeried by the standard that every node must have a termination resistance matching the impedance of the lines to avoid reflections, usually 120 ohms. </p>
+<p> Our Bus Node architecture works with a 3 layer simplified model (based on OSI model). Made of an <a href="https://www.arduino.cc/en/main/arduinoBoardUno">Arduino UNO</a> board as a microcontroller, a communication controller & transceiver. This last 2 come embedded in a <a href="http://wiki.seeed.cc/CAN-BUS_Shield_V1.2/">CAN Bus shield</a>. For the shield to work propoerly it was requeried by the standard that every node must have a termination resistance matching the impedance of the lines to avoid reflections, usually 120 ohms.</p>
 <p>The <a href="">software</a> part was developed with the help of an open source <a href="https://github.com/Seeed-Studio/CAN_BUS_Shield">library</a>, to enable simple call of functions to work with the <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/21801d.pdf">MCP2515</a> controller embedded in the shield. We developed our own messages by declaring our own IDs and adding data in the CAN frame message.</p>
-<p>Finally in the prototype there are 2 "new" applications, to implement safety and security functions. This were ideas we as a team came up with, to show how easy it is to add information to the network, both implemented in code and in relative cheap hardware.</p>
+<p>Finally the prototype has 2 "new" applications, it implements safety and security functions. This were ideas we as a team came up with, to show how easy it is to add information to the network, both implemented in code and in relative cheap hardware.</p>
 <br>
 <p>We know that seeing just cables can be boring or not eye cathching, that's why on our first presentation in Fall 2016 we developed a CAD vehicle and send it to manufacture to a bike store. Then for the next exposition in Winter 2016 we partner up with <a href="http://www.zios.com.mx/">'Zios'</a>, an industrial design company, to develop a physcial chasis. The result was a scale size convertible "vehicle" based on Tesla Roadster.</p>
+<p>This project was created with Manuel Rodriguez and Fernanda Rivera.</p>
 <p>You can find our technical PP presentation <a href="../../extras/Presentacion_Nacional.pdf">here</a> and our development stage presentation <a href="../../extras/Presentation_stages.pdf">here</a>.</p>
-<p style="font-size: 95%; position: absolute; bottom: auto; padding: 10px;">Built with code, 2017 - <a href="mailto:usdbold@gmail.com">usdbold@gmail.com</a></p>
+<p style="font-size: 95%; position: absolute; bottom: auto; padding: 10px;">Built with code. Kevin Aguilera, 2017 - <a href="mailto:usdbold@gmail.com">usdbold@gmail.com</a></p>
 </body>
 </html>
