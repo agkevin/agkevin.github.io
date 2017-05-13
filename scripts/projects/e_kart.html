@@ -16,8 +16,9 @@
 <h1 id="header1">Telemetry E-kart</h1>
 <h3>Spring 2017</h3>
 <p>This project was developed for my <a href="https://www.thi.de/">exchange university</a> in Ingolstadt, Germany. The original title of the project is „Aufbau eines Versuchsträgers (E-Kart) für Fahrerassistenzsysteme“.</p>
-<p>I worked on an electric go-Kart that students previously worked on. My task was to collect measurement data from various sensors and the 2 motor controllers installed on the e-Kart and send this data to a remote laptop.</p>
-<p>The original task ended there, but I decided to bring it up a level. Transfer the data live and use LabVIEW to display all the information with gauges and graphs for a better user reading and added a watchdog timer with an sleep function. So when the 2 paired trasnceivers were not connected they would enter a low power mode.</p>
+<p>I worked on an electric <a href="http://en.rimo-germany.com/sinus-mini.html">go-Kart</a> that students previously worked on. My task was to collect measurement data from various sensors and 2 motor controllers installed on the e-Kart and send this data to a remote laptop.</p>
+<p>For the transfer of data live I used 2 <a href="https://www.digi.com/support/productdetail?pid=4549">Xbee transceivers</a> and <a href="https://www.arduino.cc/en/main/arduinoBoardUno">Arduino UNO</a> boards. For visualizing the data I played with 2 softwares but at the end I use LabVIEW to display all the information with gauges and graphs.</p>
+<p>All of the collected data comes from the sensors embedded in the motor controllers. Using CAN and <a href="http://www.ni.com/white-paper/14162/en/#toc2">CANopen</a> protocols I was able to get the information I needed.</p>
 <p> <a href="">Code</a> </p>
 <p> <a href="">CANopen Presentation</a> </p>
 <p> <a href="">Report</a> </p>
@@ -29,7 +30,22 @@
 <img src="../../images/ekart2.png" width="75%" height="auto"></img>
 <br>
 <br>
+<img src="../../images/canbus1.png" width="75%" height="auto"></img>
+<br>
+<br>
 <img src="../../images/ekart3.png" width="75%" height="auto"></img>
+<br>
+<br>
+<img src="../../images/tele1.png" width="75%" height="auto"></img>
+<br>
+<br>
+<img src="../../images/lab1.png" width="75%" height="auto"></img>
+<br>
+<br>
+<img src="../../images/lab2.png" width="75%" height="auto"></img>
+<br>
+<br>
+<!-- <iframe width="75%" height="auto" src="" frameborder="0" allowfullscreen></iframe> youtube video --> 
 </center>
 <p style="font-size: 95%; position: absolute; bottom: auto; padding: 10px;">Built with code. Kevin Aguilera, 2017 - <a href="mailto:usdbold@gmail.com">usdbold@gmail.com</a></p>
 </body>
